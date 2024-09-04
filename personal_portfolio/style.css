@@ -1,0 +1,212 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+/* General body styles */
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  background-color: rgb(18, 18, 62);
+  padding: 0 20px; /* Add some padding for better spacing */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  color: rgb(153, 153, 226);
+  font-size: 1.1rem;
+}
+
+/* Main section styles */
+main {
+  padding: 20px;
+}
+
+/* First section styles */
+.firstsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 0;
+  gap: 20px; /* Add some space between left and right sections */
+}
+
+.leftsection {
+  font-size: 2rem;
+  width: 50%;
+}
+
+.leftsection .purple {
+  color: rgb(170, 107, 228);
+}
+
+.leftsection .Buttons {
+  margin-top: 20px;
+}
+
+.leftsection .btn {
+  padding: 12px 20px;
+  background: #1e2167;
+  color: white;
+  border: 2px solid white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.rightsection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightsection img {
+  width: 50%; /* Ensure the image scales to 50% of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 400px; /* Optional: prevent the image from getting too large */
+  border-radius: 8px; /* Optional: add rounded corners */
+}
+
+/* Section separator */
+main hr {
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 40px 0;
+}
+
+/* Education and skills section styles */
+.secondsection, .thirdsection, .fourthsection {
+  max-width: 80vw;
+  margin: auto;
+}
+
+.secondsection h1, .thirdsection h1, .fourthsection h1 {
+  font-size: 1.9rem;
+}
+
+.gray {
+  color: gray;
+}
+
+/* Box styling for sections with multiple items */
+.box {
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical {
+  background: rgb(0, 0, 33); /* Match background color with the body */
+  margin: 20px 0;
+  width: 80%;
+  text-align: center;
+  padding: 10px; /* Optional: add some padding for better spacing */
+}
+
+.vertical img {
+  width: 50px; /* Adjust image size */
+  margin-bottom: 10px;
+}
+
+.vertical-title {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.vertical-desc {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #050512;
+  color: white;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer > div {
+  width: 23%;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer-rights {
+  text-align: center;
+  color: gray;
+  padding: 10px 0;
+}
+
+/* Responsive design for tablets and mobile devices */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  .firstsection {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .firstsection .leftsection, .firstsection .rightsection {
+      width: 100%;
+  }
+
+  .firstsection .rightsection img {
+      width: 80%;
+      max-width: none;
+  }
+
+  .footer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer > div {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
